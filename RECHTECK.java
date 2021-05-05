@@ -40,7 +40,7 @@ class RECHTECK
         SPIELBRETT.PositionSetzen(symbol, x, y);
         SPIELBRETT.GrößeSetzen(symbol, breite, höhe);
         SPIELBRETT.FarbeSetzen(symbol, farbe);
-        SPIELBRETT.SichtbarkeitSetzen(symbol, sichtbar);
+        SPIELBRETT.setzeSichtbarkeit(true);
         SPIELBRETT.WinkelSetzen(symbol, winkel);
     }
     
