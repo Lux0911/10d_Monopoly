@@ -36,12 +36,12 @@ class RECHTECK
         farbe = "rot";
         sichtbar = true;
         winkel = 0;
-        symbol = ZEICHENFLAECHE.SymbolErzeugen(ZEICHENFLAECHE.SymbolArt.rechteck);
-        ZEICHENFLAECHE.PositionSetzen(symbol, x, y);
-        ZEICHENFLAECHE.GrößeSetzen(symbol, breite, höhe);
-        ZEICHENFLAECHE.FarbeSetzen(symbol, farbe);
-        ZEICHENFLAECHE.SichtbarkeitSetzen(symbol, sichtbar);
-        ZEICHENFLAECHE.WinkelSetzen(symbol, winkel);
+        symbol = SPIELBRETT.SymbolErzeugen(ZEICHENFLAECHE.SymbolArt.rechteck);
+        SPIELBRETT.PositionSetzen(symbol, x, y);
+        SPIELBRETT.GrößeSetzen(symbol, breite, höhe);
+        SPIELBRETT.FarbeSetzen(symbol, farbe);
+        SPIELBRETT.SichtbarkeitSetzen(symbol, sichtbar);
+        SPIELBRETT.WinkelSetzen(symbol, winkel);
     }
     
     /**
@@ -53,7 +53,7 @@ class RECHTECK
     {
         this.x = x;
         this.y = y;
-        ZEICHENFLAECHE.PositionSetzen(symbol, x, y);
+        SPIELBRETT.PositionSetzen(symbol, x, y);
     }
         
     /**
@@ -65,7 +65,7 @@ class RECHTECK
     {
         this.breite = breite;
         this.höhe = hoehe;
-        ZEICHENFLAECHE.GrößeSetzen(symbol, breite, höhe);
+        SPIELBRETT.GrößeSetzen(symbol, breite, höhe);
     }
     
     /**
@@ -80,7 +80,7 @@ class RECHTECK
     void FarbeSetzen (String farbe)
     {
         this.farbe = farbe;
-        ZEICHENFLAECHE.FarbeSetzen(symbol, farbe);
+        SPIELBRETT.FarbeSetzen(symbol, farbe);
     }
         
     /**
@@ -92,7 +92,7 @@ class RECHTECK
     void WinkelSetzen (int winkel)
     {
         this.winkel = winkel;
-        ZEICHENFLAECHE.WinkelSetzen(symbol, winkel);
+        SPIELBRETT.WinkelSetzen(symbol, winkel);
     }
     
     /**
@@ -103,7 +103,7 @@ class RECHTECK
     void SichtbarkeitSetzen (boolean sichtbar)
     {
         this.sichtbar = sichtbar;
-        ZEICHENFLAECHE.SichtbarkeitSetzen(symbol, sichtbar);
+        SPIELBRETT.SichtbarkeitSetzen(symbol, sichtbar);
     }
     
     /**
@@ -111,7 +111,7 @@ class RECHTECK
      */
     void NachVornBringen ()
     {
-        ZEICHENFLAECHE.NachVornBringen(symbol);
+        SPIELBRETT.NachVornBringen(symbol);
     }
     
     /**
@@ -119,7 +119,7 @@ class RECHTECK
      */
     void GanzNachVornBringen ()
     {
-        ZEICHENFLAECHE.GanzNachVornBringen(symbol);
+        SPIELBRETT.GanzNachVornBringen(symbol);
     }
     
     /**
@@ -127,7 +127,7 @@ class RECHTECK
      */
     void NachHintenBringen ()
     {
-        ZEICHENFLAECHE.NachHintenBringen(symbol);
+        SPIELBRETT.NachHintenBringen(symbol);
     }
     
     /**
@@ -135,6 +135,6 @@ class RECHTECK
      */
     void GanzNachHintenBringen ()
     {
-        ZEICHENFLAECHE.GanzNachHintenBringen(symbol);
+        SPIELBRETT.GanzNachHintenBringen(symbol);
     }
 }
