@@ -27,10 +27,10 @@ class SPIELFIGUR extends KREIS
     rot = new SPIELFIGUR();
     schwarz = new SPIELFIGUR();
     
-    gelb.FarbeSetzen = "gelb";
-    blau.FarbeSetzen = "blau";
-    rot.FarbeSetzen = "rot";
-    schwarz.FarbeSetzen = "schwarz";
+    gelb.FarbeSetzen("gelb");
+    blau.FarbeSetzen ("blau");
+    rot.FarbeSetzen("rot");
+    schwarz.FarbeSetzen("schwarz");
   
   
     
