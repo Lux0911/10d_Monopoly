@@ -33,7 +33,12 @@ class KREIS
         farbe = "rot";
         sichtbar = true;
         winkel = 0;
-       
+        symbol = ZEICHENFLAECHE.SymbolErzeugen(ZEICHENFLAECHE.SymbolArt.kreis);
+        ZEICHENFLAECHE.PositionSetzen(symbol, x - radius, y - radius);
+        ZEICHENFLAECHE.GrößeSetzen(symbol, radius * 2, radius * 2);
+        ZEICHENFLAECHE.FarbeSetzen(symbol, farbe);
+        ZEICHENFLAECHE.SichtbarkeitSetzen(symbol, sichtbar);
+        ZEICHENFLAECHE.WinkelSetzen(symbol, winkel);
     }
     
     /**
@@ -45,7 +50,7 @@ class KREIS
     {
         this.x = x;
         this.y = y;
-        
+        ZEICHENFLAECHE.PositionSetzen(symbol, x - radius, y - radius);
     }
         
     /**
@@ -55,7 +60,8 @@ class KREIS
     void RadiusSetzen (int radius)
     {
         this.radius = radius;
-       
+        ZEICHENFLAECHE.GrößeSetzen(symbol, radius * 2, radius * 2);
+        ZEICHENFLAECHE.PositionSetzen(symbol, x - radius, y - radius);
     }
     
     /**
@@ -70,7 +76,7 @@ class KREIS
     void FarbeSetzen (String farbe)
     {
         this.farbe = farbe;
-        
+        ZEICHENFLAECHE.FarbeSetzen(symbol, farbe);
     }
         
     /**
@@ -82,7 +88,7 @@ class KREIS
     void WinkelSetzen (int winkel)
     {
         this.winkel = winkel;
-        
+        ZEICHENFLAECHE.WinkelSetzen(symbol, winkel);
     }
     
     /**
@@ -93,7 +99,7 @@ class KREIS
     void SichtbarkeitSetzen (boolean sichtbar)
     {
         this.sichtbar = sichtbar;
-        
+        ZEICHENFLAECHE.SichtbarkeitSetzen(symbol, sichtbar);
     }
     
     /**
@@ -101,7 +107,7 @@ class KREIS
      */
     void NachVornBringen ()
     {
-       
+        ZEICHENFLAECHE.NachVornBringen(symbol);
     }
     
     /**
@@ -109,7 +115,7 @@ class KREIS
      */
     void GanzNachVornBringen ()
     {
-        
+        ZEICHENFLAECHE.GanzNachVornBringen(symbol);
     }
     
     /**
@@ -117,7 +123,7 @@ class KREIS
      */
     void NachHintenBringen ()
     {
-        
+        ZEICHENFLAECHE.NachHintenBringen(symbol);
     }
     
     /**
@@ -125,6 +131,6 @@ class KREIS
      */
     void GanzNachHintenBringen ()
     {
-        
+        ZEICHENFLAECHE.GanzNachHintenBringen(symbol);
     }
 }
