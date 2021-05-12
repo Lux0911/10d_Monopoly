@@ -8,7 +8,7 @@
 public class SPIEL
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
-    private int x;
+    SPIELBRETT spielbrett;
 
     /**
      * Konstruktor für Objekte der Klasse SPIEL
@@ -16,18 +16,9 @@ public class SPIEL
     public SPIEL()
     {
         // Instanzvariable initialisieren
-        x = 0;
+        spielbrett = new SPIELBRETT();
+        spielbrett.FarbeSetzen ("grau");
     }
 
-    /**
-     * Ein Beispiel einer Methode - ersetzen Sie diesen Kommentar mit Ihrem eigenen
-     * 
-     * @param  y    ein Beispielparameter für eine Methode
-     * @return        die Summe aus x und y
-     */
-    public int beispielMethode(int y)
-    {
-        // tragen Sie hier den Code ein
-        return x + y;
-    }
+    
 }
