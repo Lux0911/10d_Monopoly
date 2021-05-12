@@ -1,4 +1,4 @@
-
+    
 /**
  * Wrapperklasse für ein Rechteck auf der Zeichenfläche.
  * 
