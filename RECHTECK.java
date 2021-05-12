@@ -36,12 +36,6 @@ class RECHTECK
         farbe = "rot";
         sichtbar = true;
         winkel = 0;
-        symbol = SPIELBRETT.SymbolErzeugen(ZEICHENFLAECHE.SymbolArt.rechteck);
-        SPIELBRETT.PositionSetzen(symbol, x, y);
-        SPIELBRETT.GrößeSetzen(symbol, breite, höhe);
-        SPIELBRETT.FarbeSetzen(symbol, farbe);
-        SPIELBRETT.setzeSichtbarkeit(true);
-        SPIELBRETT.WinkelSetzen(symbol, winkel);
     }
     
     /**
