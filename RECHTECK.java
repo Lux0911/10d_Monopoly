@@ -32,7 +32,6 @@ class RECHTECK
      */
     RECHTECK ()
     {
-        rechteck = new RECHTECK();
         x = 10;
         y = 10;
         breite = 100;
@@ -40,6 +39,12 @@ class RECHTECK
         farbe = "rot";
         sichtbar = true;
         winkel = 0;
+        symbol = ZEICHENFLAECHE.SymbolErzeugen(ZEICHENFLAECHE.SymbolArt.rechteck);
+        ZEICHENFLAECHE.PositionSetzen(symbol, x, y);
+        ZEICHENFLAECHE.GrößeSetzen(symbol, breite, höhe);
+        ZEICHENFLAECHE.FarbeSetzen(symbol, farbe);
+        ZEICHENFLAECHE.SichtbarkeitSetzen(symbol, sichtbar);
+        ZEICHENFLAECHE.WinkelSetzen(symbol, winkel);
     }
     
     /**
@@ -51,7 +56,7 @@ class RECHTECK
     {
         this.x = x;
         this.y = y;
-        
+        ZEICHENFLAECHE.PositionSetzen(symbol, x, y);
     }
         
     /**
@@ -63,7 +68,7 @@ class RECHTECK
     {
         this.breite = breite;
         this.höhe = hoehe;
-        
+        ZEICHENFLAECHE.GrößeSetzen(symbol, breite, höhe);
     }
     
     /**
@@ -78,7 +83,7 @@ class RECHTECK
     void FarbeSetzen (String farbe)
     {
         this.farbe = farbe;
-        
+        ZEICHENFLAECHE.FarbeSetzen(symbol, farbe);
     }
         
     /**
@@ -90,7 +95,7 @@ class RECHTECK
     void WinkelSetzen (int winkel)
     {
         this.winkel = winkel;
-        
+        ZEICHENFLAECHE.WinkelSetzen(symbol, winkel);
     }
     
     /**
@@ -101,8 +106,38 @@ class RECHTECK
     void SichtbarkeitSetzen (boolean sichtbar)
     {
         this.sichtbar = sichtbar;
-        
+        ZEICHENFLAECHE.SichtbarkeitSetzen(symbol, sichtbar);
     }
     
+    /**
+     * Bringt das Rechteck eine Ebene nach vorn.
+     */
+    void NachVornBringen ()
+    {
+        ZEICHENFLAECHE.NachVornBringen(symbol);
+    }
     
+    /**
+     * Bringt das Rechteck in die vorderste Ebene.
+     */
+    void GanzNachVornBringen ()
+    {
+        ZEICHENFLAECHE.GanzNachVornBringen(symbol);
+    }
+    
+    /**
+     * Bringt das Rechteck eine Ebene nach hinten.
+     */
+    void NachHintenBringen ()
+    {
+        ZEICHENFLAECHE.NachHintenBringen(symbol);
+    }
+    
+    /**
+     * Bringt das Rechteck in die hinterste Ebene.
+     */
+    void GanzNachHintenBringen ()
+    {
+        ZEICHENFLAECHE.GanzNachHintenBringen(symbol);
+    }
 }

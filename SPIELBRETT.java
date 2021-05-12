@@ -16,7 +16,6 @@ public class SPIELBRETT extends RECHTECK
     public SPIELBRETT()
     {
         // Instanzvariable initialisieren
-        super();
         spielbrett = new SPIELBRETT();
         spielbrett.FarbeSetzen ("grau");
         spielbrett.GroesseSetzen (100, 100);
