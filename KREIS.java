@@ -5,7 +5,7 @@
  * @author Albert Wiedemann 
  * @version 1.0
  */
-class KREIS
+class KREIS 
 {
     /** x-Position des Kreismittelpunktes. */
     private int x;
