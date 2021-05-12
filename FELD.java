@@ -1,19 +1,19 @@
 
 /**
- * Beschreiben Sie hier die Klasse Straße.
+ * Beschreiben Sie hier die Klasse FELD.
  * 
  * @author (Ihr Name) 
  * @version (eine Versionsnummer oder ein Datum)
  */
-public class Straße extends RECHTECK 
+public class FELD extends RECHTECK
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
     private int x;
 
     /**
-     * Konstruktor für Objekte der Klasse Straße
+     * Konstruktor für Objekte der Klasse FELD
      */
-    public Straße()
+    public FELD()
     {
         // Instanzvariable initialisieren
         x = 0;
