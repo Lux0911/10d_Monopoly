@@ -8,7 +8,7 @@
 public class SPIELBRETT extends RECHTECK
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
-    
+    SPIELBRETT spielbrett;
 
     /**
      * Konstruktor für Objekte der Klasse SPIELBRETT
@@ -16,7 +16,11 @@ public class SPIELBRETT extends RECHTECK
     public SPIELBRETT()
     {
         // Instanzvariable initialisieren
-        x = 0;
+        super();
+        spielbrett = new SPIELBRETT();
+        spielbrett.FarbeSetzen ("grau");
+        spielbrett.GroesseSetzen (100, 100);
+        spielbrett.SichtbarkeitSetzen (true);
     }
 
     
