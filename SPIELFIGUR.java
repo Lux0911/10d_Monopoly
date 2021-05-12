@@ -35,4 +35,8 @@ class SPIELFIGUR extends KREIS
   
     
   }
+  void Vorrücken()
+  {
+     //beim alten Standpunkt verschwinden und beim neuen Standpunkt neu erscheinen 
+    }
 }
