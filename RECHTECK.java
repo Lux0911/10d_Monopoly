@@ -47,7 +47,7 @@ class RECHTECK
     {
         this.x = x;
         this.y = y;
-        SPIELBRETT.PositionSetzen(symbol, x, y);
+        
     }
         
     /**
@@ -59,7 +59,7 @@ class RECHTECK
     {
         this.breite = breite;
         this.höhe = hoehe;
-        SPIELBRETT.GrößeSetzen(symbol, breite, höhe);
+        
     }
     
     /**
@@ -74,7 +74,7 @@ class RECHTECK
     void FarbeSetzen (String farbe)
     {
         this.farbe = farbe;
-        SPIELBRETT.FarbeSetzen(symbol, farbe);
+        
     }
         
     /**
@@ -86,7 +86,7 @@ class RECHTECK
     void WinkelSetzen (int winkel)
     {
         this.winkel = winkel;
-        SPIELBRETT.WinkelSetzen(symbol, winkel);
+        
     }
     
     /**
@@ -97,38 +97,8 @@ class RECHTECK
     void SichtbarkeitSetzen (boolean sichtbar)
     {
         this.sichtbar = sichtbar;
-        SPIELBRETT.SichtbarkeitSetzen(symbol, sichtbar);
+        
     }
     
-    /**
-     * Bringt das Rechteck eine Ebene nach vorn.
-     */
-    void NachVornBringen ()
-    {
-        SPIELBRETT.NachVornBringen(symbol);
-    }
     
-    /**
-     * Bringt das Rechteck in die vorderste Ebene.
-     */
-    void GanzNachVornBringen ()
-    {
-        SPIELBRETT.GanzNachVornBringen(symbol);
-    }
-    
-    /**
-     * Bringt das Rechteck eine Ebene nach hinten.
-     */
-    void NachHintenBringen ()
-    {
-        SPIELBRETT.NachHintenBringen(symbol);
-    }
-    
-    /**
-     * Bringt das Rechteck in die hinterste Ebene.
-     */
-    void GanzNachHintenBringen ()
-    {
-        SPIELBRETT.GanzNachHintenBringen(symbol);
-    }
 }
