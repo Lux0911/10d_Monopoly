@@ -5,7 +5,7 @@
  * @author Albert Wiedemann 
  * @version 1.0
  */
-class KREIS
+class KREIS 
 {
     /** x-Position des Kreismittelpunktes. */
     private int x;
@@ -33,12 +33,7 @@ class KREIS
         farbe = "rot";
         sichtbar = true;
         winkel = 0;
-        symbol = SPIELBRETT.SymbolErzeugen(SPIELBRETT.SymbolArt.kreis);
-        SPIELBRETT.PositionSetzen(symbol, x - radius, y - radius);
-        SPIELBRETT.GrößeSetzen(symbol, radius * 2, radius * 2);
-        SPIELBRETT.FarbeSetzen(symbol, farbe);
-        SPIELBRETT.SichtbarkeitSetzen(symbol, sichtbar);
-        SPIELBRETT.WinkelSetzen(symbol, winkel);
+       
     }
     
     /**
@@ -50,7 +45,7 @@ class KREIS
     {
         this.x = x;
         this.y = y;
-        SPIELBRETT.PositionSetzen(symbol, x - radius, y - radius);
+        
     }
         
     /**
@@ -60,8 +55,7 @@ class KREIS
     void RadiusSetzen (int radius)
     {
         this.radius = radius;
-        SPIELBRETT.GrößeSetzen(symbol, radius * 2, radius * 2);
-        SPIELBRETT.PositionSetzen(symbol, x - radius, y - radius);
+       
     }
     
     /**
@@ -76,7 +70,7 @@ class KREIS
     void FarbeSetzen (String farbe)
     {
         this.farbe = farbe;
-        SPIELBRETT.FarbeSetzen(symbol, farbe);
+        
     }
         
     /**
@@ -88,7 +82,7 @@ class KREIS
     void WinkelSetzen (int winkel)
     {
         this.winkel = winkel;
-        SPIELBRETT.WinkelSetzen(symbol, winkel);
+        
     }
     
     /**
@@ -99,7 +93,7 @@ class KREIS
     void SichtbarkeitSetzen (boolean sichtbar)
     {
         this.sichtbar = sichtbar;
-        SPIELBRETT.SichtbarkeitSetzen(symbol, sichtbar);
+        
     }
     
     /**
@@ -107,7 +101,7 @@ class KREIS
      */
     void NachVornBringen ()
     {
-       SPIELBRETT.NachVornBringen(symbol);
+       
     }
     
     /**
@@ -115,7 +109,7 @@ class KREIS
      */
     void GanzNachVornBringen ()
     {
-        SPIELBRETT.GanzNachVornBringen(symbol);
+        
     }
     
     /**
@@ -123,7 +117,7 @@ class KREIS
      */
     void NachHintenBringen ()
     {
-        SPIELBRETT.NachHintenBringen(symbol);
+        
     }
     
     /**
@@ -131,6 +125,6 @@ class KREIS
      */
     void GanzNachHintenBringen ()
     {
-        SPIELBRETT.GanzNachHintenBringen(symbol);
+        
     }
 }

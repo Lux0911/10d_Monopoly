@@ -23,12 +23,18 @@ class RECHTECK
     private int winkel;
     /** Referenz auf das Delegate-Objekt. */
     private Object symbol;
+<<<<<<< HEAD
     
+=======
+    RECHTECK rechteck;
+
+>>>>>>> 01851ed7dd4103ef6ae26ac3b991c194b4ee9b7b
     /**
      * Der Konstruktor erzeugt das Delegate-Objekt
      */
     RECHTECK ()
     {
+        rechteck = new RECHTECK();
         x = 10;
         y = 10;
         breite = 100;
