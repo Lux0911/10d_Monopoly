@@ -23,7 +23,7 @@ class RECHTECK
     private int winkel;
     /** Referenz auf das Delegate-Objekt. */
     private Object symbol;
-
+    
     /**
      * Der Konstruktor erzeugt das Delegate-Objekt
      */
