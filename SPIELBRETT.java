@@ -9,7 +9,7 @@ public class SPIELBRETT extends RECHTECK
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
     
-
+    
     /**
      * Konstruktor für Objekte der Klasse SPIELBRETT
      */
