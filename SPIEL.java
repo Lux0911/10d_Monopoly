@@ -29,10 +29,10 @@ public class SPIEL
         rot = new SPIELFIGUR();
         schwarz = new SPIELFIGUR();
         
-        gelb.RadiusSetzen(7);
-        blau.RadiusSetzen(7);
-        rot.RadiusSetzen(7);
-        schwarz.RadiusSetzen(7);
+        gelb.RadiusSetzen(20);
+        blau.RadiusSetzen(20);
+        rot.RadiusSetzen(20);
+        schwarz.RadiusSetzen(20);
     
         
     
