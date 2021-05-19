@@ -42,5 +42,8 @@ public class SPIEL
         schwarz.FarbeSetzen("schwarz");
     }
 
-    
+    void Zug()
+    {
+        
+    }
 }

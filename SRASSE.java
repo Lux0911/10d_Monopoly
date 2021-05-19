@@ -1,19 +1,19 @@
 
 /**
- * Beschreiben Sie hier die Klasse SRAßE.
+ * Beschreiben Sie hier die Klasse SRASSE.
  * 
  * @author (Ihr Name) 
  * @version (eine Versionsnummer oder ein Datum)
  */
-public class SRAßE extends FELD
+public class SRASSE extends FELD
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
     private int x;
 
     /**
-     * Konstruktor für Objekte der Klasse SRAßE
+     * Konstruktor für Objekte der Klasse SRASSE
      */
-    public SRAßE()
+    public SRASSE()
     {
         // Instanzvariable initialisieren
         x = 0;
