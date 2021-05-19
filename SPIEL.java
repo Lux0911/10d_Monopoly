@@ -17,7 +17,7 @@ public class SPIEL
     {
         // Instanzvariable initialisieren
         spielbrett = new SPIELBRETT();
-        spielbrett.FarbeSetzen ("grau");
+        spielbrett.FarbeSetzen ("grün");
         spielbrett.GroesseSetzen (1000, 1000);
     }
 
