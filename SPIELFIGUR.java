@@ -17,10 +17,10 @@ class SPIELFIGUR extends KREIS
    SPIELFIGUR()
   {
     super();
-    gelb.RadiusSetzen(10);
-    blau.RadiusSetzen(10);
-    rot.RadiusSetzen(10);
-    schwarz.RadiusSetzen(10);
+    gelb.RadiusSetzen(7);
+    blau.RadiusSetzen(7);
+    rot.RadiusSetzen(7);
+    schwarz.RadiusSetzen(7);
     
     gelb = new SPIELFIGUR();
     blau = new SPIELFIGUR();
