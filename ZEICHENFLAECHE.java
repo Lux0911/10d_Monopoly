@@ -33,7 +33,7 @@ class ZEICHENFLAECHE
     /**
      * Legt das Fenster und die Malfläche an
      */
-    private ZEICHENFLAECHE ()
+    ZEICHENFLAECHE ()
     {
         alleSymbole = new ArrayList<GrafikSymbol>();
         fenster = new JFrame("Zeichenfläche");
