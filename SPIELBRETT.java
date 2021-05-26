@@ -1,6 +1,7 @@
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
+import java.net.*;
 /**
  * Beschreiben Sie hier die Klasse SPIELBRETT.
  * 
@@ -15,6 +16,7 @@ public class SPIELBRETT extends RECHTECK
     int x, y;
     
     
+    
     /**
      * Konstruktor für Objekte der Klasse SPIELBRETT
      */
@@ -27,7 +29,8 @@ public class SPIELBRETT extends RECHTECK
         Hintergrund = new JFrame();
         Hintergrund.setVisible (true);
         Hintergrund.setSize(1000,1000);
-        MonopolyHintergrund = new ImageIcon ("Monopoly_Hintergrund.jpg");        
+        MonopolyHintergrund = new ImageIcon ("https://github.com/Lux0911/10d_Monopoly/blob/master/Monopoly_Hintergrund.jpg");    
+        
     }
 
     
