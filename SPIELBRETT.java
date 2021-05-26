@@ -1,4 +1,5 @@
-
+import java.awt.*;
+import java.awt.event.*;
 /**
  * Beschreiben Sie hier die Klasse SPIELBRETT.
  * 
@@ -8,8 +9,9 @@
 public class SPIELBRETT extends RECHTECK
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
-    
 
+    
+    
     /**
      * Konstruktor für Objekte der Klasse SPIELBRETT
      */

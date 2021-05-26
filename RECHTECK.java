@@ -5,7 +5,7 @@
  * @author Albert Wiedemann 
  * @version 1.0
  */
-class RECHTECK
+class RECHTECK extends ZEICHENFLAECHE
 {
     /** x-Position der linken oberen Ecke. */
     private int x;
@@ -28,6 +28,7 @@ class RECHTECK
      */
     RECHTECK ()
     {
+        super();
         x = 10;
         y = 10;
         breite = 100;
