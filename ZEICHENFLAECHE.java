@@ -15,7 +15,7 @@ import java.util.*;
  * @author Albert Wiedemann 
  * @version 1.0
  */
-class ZEICHENFLAECHE
+class ZEICHENFLAECHE extends JFrame
 {
     /** Aufzählung der erzeugbaren Objektarten. */
     static enum SymbolArt {kreis, dreieck, rechteck;};
@@ -29,6 +29,7 @@ class ZEICHENFLAECHE
     private JComponent malfläche;
     /** Feld aller zu zeichnenden Objekte. */
     private ArrayList<GrafikSymbol> alleSymbole;
+    
 
     /**
      * Legt das Fenster und die Malfläche an
@@ -62,6 +63,7 @@ class ZEICHENFLAECHE
         
         fenster.add(malfläche, BorderLayout.CENTER);
         fenster.setVisible(true);
+        
     }
     
     /**
