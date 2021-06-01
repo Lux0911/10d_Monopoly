@@ -17,13 +17,10 @@ public class SPIEL
     /**
      * Konstruktor für Objekte der Klasse SPIEL
      */
-    public SPIEL()
+    public SPIEL() 
     {
         // Instanzvariable initialisieren
-        spielbrett = new SPIELBRETT();
-        spielbrett.FarbeSetzen ("grau");
-
-        spielbrett.GroesseSetzen (1000, 1000);
+        
         
         gelb = new SPIELFIGUR();
         blau = new SPIELFIGUR();

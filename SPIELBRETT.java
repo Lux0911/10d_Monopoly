@@ -32,6 +32,7 @@ public class SPIELBRETT extends JFrame
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
     JFrame Hintergrund;
     ImageIcon MonopolyHintergrund;
+    JLabel l;
     int x, y;
     
     
@@ -48,27 +49,12 @@ public class SPIELBRETT extends JFrame
         Hintergrund = new JFrame();
         Hintergrund.setVisible (true);
         Hintergrund.setSize(1000,1000);
-        URL url = getClass().getResource("/images/Monopoly_Hintergrund.jpg");
-        Image img = new ImageIcon(url).getImage();  
+        MonopolyHintergrund = new ImageIcon ("Monopoly_Hintergrund.jpg");
+        l = new JLabel (MonopolyHintergrund);
+        l.setLocation(x,y);
+        Hintergrund.add(l);
         
     }
 
-    private ImageIcon showImg()
-    {
-        BufferedImage img = null;
-        try 
-        {
-            img = ImageIO.read(getClass().getResource("/images/Monopoly_Hintergrund.jpg"));
-        }
-        catch (IOException e)
-        {
-            e.printStackTrace();
-        }
-        return new ImageIcon(img);
-    }
     
-    public static void main(String[] args)
-    {
-        new SPIELBRETT();
-    }
 }
