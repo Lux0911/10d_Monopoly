@@ -21,7 +21,7 @@ public class SPIEL
     {
         // Instanzvariable initialisieren
         
-        
+        spielbrett = new SPIELBRETT();
         gelb = new SPIELFIGUR();
         blau = new SPIELFIGUR();
         rot = new SPIELFIGUR();
