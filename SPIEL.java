@@ -8,7 +8,7 @@
 public class SPIEL
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
-    SPIELBRETT spielbrett;
+    ZEICHENFLAECHE fenster;
     SPIELFIGUR gelb;
     SPIELFIGUR blau;
     SPIELFIGUR rot;
@@ -21,7 +21,7 @@ public class SPIEL
     {
         // Instanzvariable initialisieren
         
-        spielbrett = new SPIELBRETT();
+        fenster = new ZEICHENFLAECHE();
         gelb = new SPIELFIGUR();
         blau = new SPIELFIGUR();
         rot = new SPIELFIGUR();
