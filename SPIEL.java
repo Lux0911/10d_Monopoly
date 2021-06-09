@@ -42,6 +42,6 @@ public class SPIEL
 
     void Zug()
     {
-        
+        int randomNumber = (int) (Math.random() * 2 +10);
     }
 }
