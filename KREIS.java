@@ -33,8 +33,8 @@ class KREIS
         farbe = "rot";
         sichtbar = true;
         winkel = 0;
-        // symbol = ZEICHENFLAECHE.SymbolErzeugen(ZEICHENFLAECHE.SymbolArt.kreis);
-        //ZEICHENFLAECHE.PositionSetzen(symbol, x - radius, y - radius);
+        symbol = ZEICHENFLAECHE.SymbolErzeugen(ZEICHENFLAECHE.SymbolArt.kreis);
+        ZEICHENFLAECHE.PositionSetzen(symbol, x - radius, y - radius);
         ZEICHENFLAECHE.GrößeSetzen(symbol, radius * 2, radius * 2);
         ZEICHENFLAECHE.FarbeSetzen(symbol, farbe);
         ZEICHENFLAECHE.SichtbarkeitSetzen(symbol, sichtbar);
