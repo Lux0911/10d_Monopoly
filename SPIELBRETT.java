@@ -27,7 +27,7 @@ import javax.swing.JPanel;
  * @author (Ihr Name) 
  * @version (eine Versionsnummer oder ein Datum)
  */
-public class SPIELBRETT extends JFrame 
+public class SPIELBRETT extends ZEICHENFLAECHE 
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
     JFrame Hintergrund;
