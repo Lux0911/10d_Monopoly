@@ -16,6 +16,7 @@ public class FELD extends RECHTECK
     public FELD()
     {
         // Instanzvariable initialisieren
+        super();
         x = 0;
     }
 

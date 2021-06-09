@@ -5,7 +5,7 @@
  * @author (Ihr Name) 
  * @version (eine Versionsnummer oder ein Datum)
  */
-public class SRASSE extends FELD
+public class STRASSE extends FELD
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
     private int x;
@@ -13,7 +13,7 @@ public class SRASSE extends FELD
     /**
      * Konstruktor für Objekte der Klasse SRASSE
      */
-    public SRASSE()
+    public STRASSE()
     {
         // Instanzvariable initialisieren
         x = 0;
