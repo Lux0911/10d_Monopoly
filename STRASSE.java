@@ -1,14 +1,14 @@
 
 /**
- * Beschreiben Sie hier die Klasse SONDERFELD.
+ * Beschreiben Sie hier die Klasse SRASSE.
  * 
  * @author (Ihr Name) 
  * @version (eine Versionsnummer oder ein Datum)
  */
-public class SONDERFELD extends FELD
+public class STRASSE extends FELD
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
-    Object sonderfeld;
+    Object strasse;
     int x;
     int y;
     String farbe;
@@ -16,7 +16,11 @@ public class SONDERFELD extends FELD
     int breite;
     boolean sichtbar;
     
-    public SONDERFELD()
+
+    /**
+     * Konstruktor für Objekte der Klasse SRASSE
+     */
+    public STRASSE()
     {
         // Instanzvariable initialisieren
         x = 60;
@@ -27,56 +31,56 @@ public class SONDERFELD extends FELD
         sichtbar = true;
         
         
-        sonderfeld = ZEICHENFLAECHE.SymbolErzeugen(ZEICHENFLAECHE.SymbolArt.rechteck);
-        ZEICHENFLAECHE.PositionSetzen(sonderfeld, x, y);
-        ZEICHENFLAECHE.GrößeSetzen (sonderfeld,breite, hoehe);
-        ZEICHENFLAECHE.FarbeSetzen (sonderfeld, farbe);
-        ZEICHENFLAECHE.SichtbarkeitSetzen(sonderfeld, sichtbar);
+        strasse = ZEICHENFLAECHE.SymbolErzeugen(ZEICHENFLAECHE.SymbolArt.rechteck);
+        ZEICHENFLAECHE.PositionSetzen(strasse, x, y);
+        ZEICHENFLAECHE.GrößeSetzen (strasse,breite, hoehe);
+        ZEICHENFLAECHE.FarbeSetzen (strasse, farbe);
+        ZEICHENFLAECHE.SichtbarkeitSetzen(strasse, sichtbar);
         
     }
-    
-    void PositionSetzen (int x, int y)
+
+   void PositionSetzen (int x, int y)
    {
        this.x = x;
        this.y = y;
-       ZEICHENFLAECHE.PositionSetzen(sonderfeld, x, y);
+       ZEICHENFLAECHE.PositionSetzen(strasse, x, y);
    }
    
    void GroesseSetzen (int breite, int hoehe)
    {
        this.breite = breite;
        this.hoehe = hoehe;
-       ZEICHENFLAECHE.GrößeSetzen (sonderfeld, breite, hoehe);
+       ZEICHENFLAECHE.GrößeSetzen (strasse, breite, hoehe);
    }
    
    void FarbeSetzen (String farbe)
    {
        this.farbe = farbe;
-       ZEICHENFLAECHE.FarbeSetzen(sonderfeld, farbe);
+       ZEICHENFLAECHE.FarbeSetzen(strasse, farbe);
    }
    void SichtbarkeitSetzen (boolean sichtbar)
    {
        this.sichtbar = sichtbar;
-       ZEICHENFLAECHE.SichtbarkeitSetzen (sonderfeld, sichtbar);
+       ZEICHENFLAECHE.SichtbarkeitSetzen (strasse, sichtbar);
    }
    
    void NachVornBringen ()
    {
-       ZEICHENFLAECHE.NachVornBringen(sonderfeld);
+       ZEICHENFLAECHE.NachVornBringen(strasse);
    }
    
    void GanzNachVornBringen()
    {
-       ZEICHENFLAECHE.GanzNachVornBringen(sonderfeld);
+       ZEICHENFLAECHE.GanzNachVornBringen(strasse);
    }
    
    void NachHintenBringen()
    {
-       ZEICHENFLAECHE.NachHintenBringen(sonderfeld);
+       ZEICHENFLAECHE.NachHintenBringen(strasse);
    }
    
    void GanzNachHintenBringen()
    {
-       ZEICHENFLAECHE.GanzNachHintenBringen(sonderfeld);
+       ZEICHENFLAECHE.GanzNachHintenBringen(strasse);
    }
 }

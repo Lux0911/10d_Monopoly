@@ -27,19 +27,17 @@ import javax.swing.JPanel;
  * @author (Ihr Name) 
  * @version (eine Versionsnummer oder ein Datum)
  */
-public class SPIELBRETT extends JFrame 
+public class SPIELBRETT extends ZEICHENFLAECHE 
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
-    JFrame Hintergrund;
+    /**JFrame Hintergrund;
     ImageIcon MonopolyHintergrund;
     JLabel l;
     int x, y;
     
     
     
-    /**
-     * Konstruktor für Objekte der Klasse SPIELBRETT
-     */
+    
     public SPIELBRETT()
     {
         // Instanzvariable initialisieren
@@ -54,7 +52,30 @@ public class SPIELBRETT extends JFrame
         l.setLocation(x,y);
         Hintergrund.add(l);
         
+    } */
+    
+    STRASSE strasse1;
+    STRASSE strasse2;
+    STRASSE strasse3;
+    STRASSE strasse4;
+    
+    public SPIELBRETT()
+    {
+        strasse1= new STRASSE();
+        strasse2 = new STRASSE();
+        strasse3 = new STRASSE();
+        strasse4 = new STRASSE ();
+        
+        strasse1.FarbeSetzen("braun");
+        strasse2.FarbeSetzen("braun");
+        strasse3.FarbeSetzen("hellblau");
+        strasse4.FarbeSetzen("hellblau");
+        
+        strasse1.PositionSetzen(80, 0);
+        strasse2.PositionSetzen(130,0);
+        strasse3.PositionSetzen(280,0);
+        strasse4.PositionSetzen(330,0);
     }
-
+    
     
 }

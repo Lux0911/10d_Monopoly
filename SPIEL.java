@@ -20,8 +20,8 @@ public class SPIEL
     public SPIEL() 
     {
         // Instanzvariable initialisieren
-        spielbrett = new SPIELBRETT();
         
+        spielbrett = new SPIELBRETT();
         gelb = new SPIELFIGUR();
         blau = new SPIELFIGUR();
         rot = new SPIELFIGUR();
@@ -42,6 +42,6 @@ public class SPIEL
 
     void Zug()
     {
-        
+        int randomNumber = (int) (Math.random() * 2 +10);
     }
 }
