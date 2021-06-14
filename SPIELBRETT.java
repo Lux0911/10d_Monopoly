@@ -58,6 +58,7 @@ public class SPIELBRETT extends ZEICHENFLAECHE
     STRASSE strasse2;
     STRASSE strasse3;
     STRASSE strasse4;
+    int x, y;
     
     public SPIELBRETT()
     {

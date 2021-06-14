@@ -50,7 +50,9 @@ class ZEICHENFLAECHE extends JFrame
         fenster = new JFrame("Zeichenfläche");
         fenster.setLocation(50, 50);
         fenster.setSize(1000,1000);
-        
+        obj = new Object();
+        x = 0;
+        y = 0;
         
         malfläche = new JComponent()
         {
