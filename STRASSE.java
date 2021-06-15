@@ -23,10 +23,10 @@ public class STRASSE extends FELD
     public STRASSE()
     {
         // Instanzvariable initialisieren
-        x = 60;
-        y = 60;
-        breite = 50;
-        hoehe = 80;
+        x = 0;
+        y = 0;
+        breite = 100;
+        hoehe = 100;
         farbe = "braun";
         sichtbar = true;
         

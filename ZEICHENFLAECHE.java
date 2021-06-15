@@ -4,10 +4,6 @@ import java.awt.geom.*;
 import java.awt.event.*;
 import javax.swing.*;
 import java.util.*;
-import javax.imageio.ImageIO;
-import java.io.*;
-import java.net.*;
-
 
 /**
  * Die Klasse stellt ein Fenster mit einer Malfläche zur Verfügung,
@@ -19,7 +15,7 @@ import java.net.*;
  * @author Albert Wiedemann 
  * @version 1.0
  */
-class ZEICHENFLAECHE extends JFrame
+class ZEICHENFLAECHE
 {
     /** Aufzählung der erzeugbaren Objektarten. */
     static enum SymbolArt {kreis, dreieck, rechteck;};
@@ -33,13 +29,6 @@ class ZEICHENFLAECHE extends JFrame
     private JComponent malfläche;
     /** Feld aller zu zeichnenden Objekte. */
     private ArrayList<GrafikSymbol> alleSymbole;
-    
-    Object obj;
-    
-    ImageIcon MonopolyHintergrund;
-    JLabel l;
-    int x, y;
-    
 
     /**
      * Legt das Fenster und die Malfläche an
@@ -49,10 +38,7 @@ class ZEICHENFLAECHE extends JFrame
         alleSymbole = new ArrayList<GrafikSymbol>();
         fenster = new JFrame("Zeichenfläche");
         fenster.setLocation(50, 50);
-        fenster.setSize(1000,1000);
-        obj = new Object();
-        x = 0;
-        y = 0;
+        fenster.setSize(800, 600);
         
         malfläche = new JComponent()
         {
@@ -75,7 +61,7 @@ class ZEICHENFLAECHE extends JFrame
         malfläche.setOpaque(true);
         
         fenster.add(malfläche, BorderLayout.CENTER);
-        
+        fenster.setVisible(true);
     }
     
     /**

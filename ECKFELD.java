@@ -21,8 +21,8 @@ public class ECKFELD extends FELD
         // Instanzvariable initialisieren
         x = 60;
         y = 60;
-        breite = 50;
-        hoehe = 80;
+        breite = 100;
+        hoehe = 100;
         farbe = "braun";
         sichtbar = true;
         
@@ -78,5 +78,10 @@ public class ECKFELD extends FELD
    void GanzNachHintenBringen()
    {
        ZEICHENFLAECHE.GanzNachHintenBringen(eckfeld);
+   }
+   
+   void Bezahlen()
+   {
+       
    }
 }

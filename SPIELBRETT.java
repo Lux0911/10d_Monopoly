@@ -27,7 +27,7 @@ import javax.swing.JPanel;
  * @author (Ihr Name) 
  * @version (eine Versionsnummer oder ein Datum)
  */
-public class SPIELBRETT extends ZEICHENFLAECHE 
+public class SPIELBRETT  
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
     /**JFrame Hintergrund;
@@ -53,29 +53,49 @@ public class SPIELBRETT extends ZEICHENFLAECHE
         Hintergrund.add(l);
         
     } */
-    
-    STRASSE strasse1;
-    STRASSE strasse2;
-    STRASSE strasse3;
-    STRASSE strasse4;
+    ECKFELD start;
+    STRASSE badstrasse;
+    STRASSE turmstrasse;
+    SONDERFELD einkommenssteuer;
+    SONDERFELD suedbahnhof;
+    STRASSE chausseestrasse;
+    STRASSE elisenstrasse;
+    STRASSE poststrasse;
+    ECKFELD nzb;
     int x, y;
     
     public SPIELBRETT()
     {
-        strasse1= new STRASSE();
-        strasse2 = new STRASSE();
-        strasse3 = new STRASSE();
-        strasse4 = new STRASSE ();
+        start = new ECKFELD();
+        badstrasse = new STRASSE();
+        turmstrasse = new STRASSE();
+        einkommenssteuer = new SONDERFELD();
+        suedbahnhof = new SONDERFELD();
+        chausseestrasse = new STRASSE();
+        elisenstrasse = new STRASSE ();
+        poststrasse = new STRASSE ();
+        nzb = new ECKFELD ();
         
-        strasse1.FarbeSetzen("braun");
-        strasse2.FarbeSetzen("braun");
-        strasse3.FarbeSetzen("hellblau");
-        strasse4.FarbeSetzen("hellblau");
+        start.FarbeSetzen("rot");
+        badstrasse.FarbeSetzen("braun");
+        turmstrasse.FarbeSetzen("braun");
+        einkommenssteuer.FarbeSetzen("weiß");
+        suedbahnhof.FarbeSetzen ("weiß");
+        chausseestrasse.FarbeSetzen("hellblau");
+        elisenstrasse.FarbeSetzen("hellblau");
+        poststrasse.FarbeSetzen("hellblau");
         
-        strasse1.PositionSetzen(80, 0);
-        strasse2.PositionSetzen(130,0);
-        strasse3.PositionSetzen(280,0);
-        strasse4.PositionSetzen(330,0);
+        start.PositionSetzen(0,0);
+        badstrasse.PositionSetzen(100, 0);
+        turmstrasse.PositionSetzen(200,0);
+        einkommenssteuer.PositionSetzen(300,0);
+        suedbahnhof.PositionSetzen(400,0);
+        chausseestrasse.PositionSetzen(500,0);
+        elisenstrasse.PositionSetzen(600,0);
+        poststrasse.PositionSetzen (700,0);
+        
+        
+                                                                                                                                                                                                                                                                                                                                                                                                                
     }
     
     
