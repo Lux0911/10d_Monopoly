@@ -30,15 +30,20 @@ public class SPIEL
         rot = new SPIELFIGUR();
         schwarz = new SPIELFIGUR();
         
-        gelb.RadiusSetzen(20);
-        blau.RadiusSetzen(20);
-        rot.RadiusSetzen(20);
-        schwarz.RadiusSetzen(20);
+        gelb.RadiusSetzen(10);
+        blau.RadiusSetzen(10);
+        rot.RadiusSetzen(10);
+        schwarz.RadiusSetzen(10);
     
         gelb.FarbeSetzen("gelb");
         blau.FarbeSetzen ("blau");
         rot.FarbeSetzen("rot");
         schwarz.FarbeSetzen("schwarz");
+        
+        gelb.MittelpunktSetzen (50, 50);
+        blau.MittelpunktSetzen (50, 50);
+        rot.MittelpunktSetzen (50, 50);
+        schwarz.MittelpunktSetzen (50, 50);
         
         xkoordinaten = new int [32];
         ykoordinaten = new int [32];

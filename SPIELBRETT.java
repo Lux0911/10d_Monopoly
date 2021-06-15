@@ -81,9 +81,10 @@ public class SPIELBRETT
         turmstrasse.FarbeSetzen("braun");
         einkommenssteuer.FarbeSetzen("weiß");
         suedbahnhof.FarbeSetzen ("weiß");
-        chausseestrasse.FarbeSetzen("hellblau");
-        elisenstrasse.FarbeSetzen("hellblau");
-        poststrasse.FarbeSetzen("hellblau");
+        chausseestrasse.FarbeSetzen("cyan");
+        elisenstrasse.FarbeSetzen("cyan");
+        poststrasse.FarbeSetzen("cyan");
+        nzb.FarbeSetzen("rot");
         
         start.PositionSetzen(0,0);
         badstrasse.PositionSetzen(100, 0);
@@ -93,6 +94,7 @@ public class SPIELBRETT
         chausseestrasse.PositionSetzen(500,0);
         elisenstrasse.PositionSetzen(600,0);
         poststrasse.PositionSetzen (700,0);
+        nzb.PositionSetzen (800,0);
         
         
                                                                                                                                                                                                                                                                                                                                                                                                                 
