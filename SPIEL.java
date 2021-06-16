@@ -86,9 +86,17 @@ public class SPIEL
             ykoordinaten [i] = k - 100;
         }
     }
-
-   void Zug()
-   {
+    
+    void main()
+    {
+        for (int i=0; i < 1000; i++)
+        {
+            
+        }
+    }
+    void Zug()
+    {
         int randomNumber = (int) (Math.random() * 2 +10);
-   }
+        
+    }
 }

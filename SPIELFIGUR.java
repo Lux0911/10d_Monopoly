@@ -12,7 +12,7 @@ class SPIELFIGUR extends KREIS
   public int rotkontostand;
   public int schwarzkontostand;
   public int betrag;
-  int amzug = SPIEL.amzug;
+
     
     
 
@@ -32,11 +32,5 @@ class SPIELFIGUR extends KREIS
   {
      //beim alten Standpunkt verschwinden und beim neuen Standpunkt neu erscheinen 
     }
-  void Einbezahlen(int betrag)
-  {
-      switch(amzug)
-      {
-          
-       }
-  }
+  
 }
