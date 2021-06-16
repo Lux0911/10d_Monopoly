@@ -38,7 +38,7 @@ class ZEICHENFLAECHE
         alleSymbole = new ArrayList<GrafikSymbol>();
         fenster = new JFrame("Zeichenfläche");
         fenster.setLocation(50, 50);
-        fenster.setSize(800, 600);
+        fenster.setSize(900, 900);
         
         malfläche = new JComponent()
         {
