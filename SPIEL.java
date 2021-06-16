@@ -17,6 +17,7 @@ public class SPIEL
     int [] xkoordinaten;
     int [] ykoordinaten;
     public String amzug;
+    int aktuellesfeld;
 
     /**
      * Konstruktor für Objekte der Klasse SPIEL
@@ -47,6 +48,7 @@ public class SPIEL
         schwarz.MittelpunktSetzen (50, 50);
         
         amzug = "gelb";
+        aktuellesfeld = 0;
         
         xkoordinaten = new int [32];
         ykoordinaten = new int [32];
@@ -91,6 +93,7 @@ public class SPIEL
     {
         for (int i=0; i < 1000; i++)
         {
+            Zug();
             
         }
     }
