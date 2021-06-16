@@ -67,7 +67,7 @@ public class SPIELBRETT
     STRASSE neuestrasse;
     SONDERFELD westbahnhof;
     STRASSE muenchnerstrasse;
-    STRASSE wernerstrasse;
+    STRASSE wienerstrasse;
     STRASSE berlinerstrasse;
     ECKFELD fp;
     STRASSE theaterstrasse;
@@ -103,7 +103,7 @@ public class SPIELBRETT
         neuestrasse = new STRASSE ();
         westbahnhof = new SONDERFELD ();
         muenchnerstrasse = new STRASSE ();
-        wernerstrasse = new STRASSE ();
+        wienerstrasse = new STRASSE ();
         berlinerstrasse = new STRASSE ();
         fp = new ECKFELD ();
         theaterstrasse = new STRASSE ();
@@ -133,6 +133,32 @@ public class SPIELBRETT
         elisenstrasse.FarbeSetzen("cyan");
         poststrasse.FarbeSetzen("cyan");
         nzb.FarbeSetzen("grau");
+        seestrasse.FarbeSetzen("magenta");
+        hafenstrasse.FarbeSetzen("magenta");
+        neuestrasse.FarbeSetzen("magenta");
+        westbahnhof.FarbeSetzen("weiß");
+        muenchnerstrasse.FarbeSetzen("orange");
+        wienerstrasse.FarbeSetzen("orange");
+        berlinerstrasse.FarbeSetzen("orange");
+        fp.FarbeSetzen("grau");
+        theaterstrasse.FarbeSetzen("rot");
+        museumstrasse.FarbeSetzen("rot");
+        opernplatz.FarbeSetzen("rot");
+        nordbahnhof.FarbeSetzen("weiß");
+        lessingstrasse.FarbeSetzen("gelb");
+        schillerstrasse.FarbeSetzen("gelb");
+        goethestrasse.FarbeSetzen("gelb");
+        idg.FarbeSetzen("grau");
+        rathausplatz.FarbeSetzen("grün");
+        hauptstrasse.FarbeSetzen("grün");
+        bahnhofstrasse.FarbeSetzen("grün");
+        hauptbahnhof.FarbeSetzen("weiß");
+        parkstrasse.FarbeSetzen("blau");
+        zusatzsteuer.FarbeSetzen("weiß");
+        schlossallee.FarbeSetzen("blau");
+
+
+
         
         start.PositionSetzen(0,0);
         badstrasse.PositionSetzen(100, 0);
@@ -143,6 +169,7 @@ public class SPIELBRETT
         elisenstrasse.PositionSetzen(600,0);
         poststrasse.PositionSetzen (700,0);
         nzb.PositionSetzen (800,0);
+        
         
         
                                                                                                                                                                                                                                                                                                                                                                                                                 
