@@ -77,6 +77,14 @@ public class SPIELBRETT
     STRASSE lessingstrasse;
     STRASSE schillerstrasse;
     STRASSE goethestrasse;
+    ECKFELD idg;
+    STRASSE rathausplatz;
+    STRASSE hauptstrasse;
+    STRASSE bahnhofstrasse;
+    SONDERFELD hauptbahnhof;
+    STRASSE parkstrasse;
+    SONDERFELD zusatzsteuer;
+    STRASSE schlossallee;
     int x, y;
     
     public SPIELBRETT()
@@ -105,6 +113,16 @@ public class SPIELBRETT
         lessingstrasse = new STRASSE ();
         schillerstrasse = new STRASSE ();
         goethestrasse = new STRASSE ();
+        idg = new ECKFELD ();
+        rathausplatz = new STRASSE ();
+        hauptstrasse = new STRASSE ();
+        bahnhofstrasse = new STRASSE ();
+        hauptbahnhof = new SONDERFELD ();
+        parkstrasse = new STRASSE ();
+        zusatzsteuer = new SONDERFELD ();
+        schlossallee = new STRASSE ();
+        
+        
         
         start.FarbeSetzen("grau");
         badstrasse.FarbeSetzen("braun");
