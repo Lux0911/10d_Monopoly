@@ -169,8 +169,31 @@ public class SPIELBRETT
         elisenstrasse.PositionSetzen(600,0);
         poststrasse.PositionSetzen (700,0);
         nzb.PositionSetzen (800,0);
-        
-        
+        seestrasse.PositionSetzen (800,100);
+        hafenstrasse.PositionSetzen (800,200);
+        neuestrasse.PositionSetzen (800,300);
+        westbahnhof.PositionSetzen (800,400);
+        muenchnerstrasse.PositionSetzen (800,500);
+        wienerstrasse.PositionSetzen (800,600);
+        berlinerstrasse.PositionSetzen (800,700);
+        fp.PositionSetzen (800,800);
+        theaterstrasse.PositionSetzen (700,800);
+        museumstrasse.PositionSetzen (600,800);
+        opernplatz.PositionSetzen (500,800);
+        nordbahnhof.PositionSetzen (400,800);
+        lessingstrasse.PositionSetzen (300,800);
+        schillerstrasse.PositionSetzen (200,800);
+        goethestrasse.PositionSetzen (100,800);
+        idg.PositionSetzen (0,800);
+        rathausplatz.PositionSetzen (0,700);
+        hauptstrasse.PositionSetzen (0,600);
+        bahnhofstrasse.PositionSetzen (0,500);
+        hauptbahnhof.PositionSetzen (0,400);
+        parkstrasse.PositionSetzen (0,300);
+        zusatzsteuer.PositionSetzen (0,200);
+        schlossallee.PositionSetzen (0,100);
+
+
         
                                                                                                                                                                                                                                                                                                                                                                                                                 
     }
