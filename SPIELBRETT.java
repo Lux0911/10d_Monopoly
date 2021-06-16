@@ -62,6 +62,21 @@ public class SPIELBRETT
     STRASSE elisenstrasse;
     STRASSE poststrasse;
     ECKFELD nzb;
+    STRASSE seestrasse;
+    STRASSE hafenstrasse;
+    STRASSE neuestrasse;
+    SONDERFELD westbahnhof;
+    STRASSE muenchnerstrasse;
+    STRASSE wernerstrasse;
+    STRASSE berlinerstrasse;
+    ECKFELD fp;
+    STRASSE theaterstrasse;
+    STRASSE museumstrasse;
+    STRASSE opernplatz;
+    SONDERFELD nordbahnhof;
+    STRASSE lessingstrasse;
+    STRASSE schillerstrasse;
+    STRASSE goethestrasse;
     int x, y;
     
     public SPIELBRETT()
@@ -75,8 +90,23 @@ public class SPIELBRETT
         elisenstrasse = new STRASSE ();
         poststrasse = new STRASSE ();
         nzb = new ECKFELD ();
+        seestrasse = new STRASSE ();
+        hafenstrasse = new STRASSE ();
+        neuestrasse = new STRASSE ();
+        westbahnhof = new SONDERFELD ();
+        muenchnerstrasse = new STRASSE ();
+        wernerstrasse = new STRASSE ();
+        berlinerstrasse = new STRASSE ();
+        fp = new ECKFELD ();
+        theaterstrasse = new STRASSE ();
+        museumstrasse = new STRASSE ();
+        opernplatz = new STRASSE ();
+        nordbahnhof = new SONDERFELD ();
+        lessingstrasse = new STRASSE ();
+        schillerstrasse = new STRASSE ();
+        goethestrasse = new STRASSE ();
         
-        start.FarbeSetzen("rot");
+        start.FarbeSetzen("grau");
         badstrasse.FarbeSetzen("braun");
         turmstrasse.FarbeSetzen("braun");
         einkommenssteuer.FarbeSetzen("weiß");
@@ -84,7 +114,7 @@ public class SPIELBRETT
         chausseestrasse.FarbeSetzen("cyan");
         elisenstrasse.FarbeSetzen("cyan");
         poststrasse.FarbeSetzen("cyan");
-        nzb.FarbeSetzen("rot");
+        nzb.FarbeSetzen("grau");
         
         start.PositionSetzen(0,0);
         badstrasse.PositionSetzen(100, 0);
