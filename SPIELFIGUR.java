@@ -13,7 +13,8 @@ class SPIELFIGUR extends KREIS
   public int schwarzkontostand;
   public int betrag;
 
-    
+  KREIS schwarz;
+  KREIS farbig;
     
 
    SPIELFIGUR()
@@ -24,7 +25,12 @@ class SPIELFIGUR extends KREIS
     blaukontostand = 15000;
     rotkontostand = 15000;
     schwarzkontostand = 15000;
-  
+    schwarz = new KREIS();
+    farbig = new KREIS();
+    schwarz.RadiusSetzen(11);
+    farbig.RadiusSetzen(10);
+    schwarz.MittelpunktSetzen(50, 50);
+    farbig.MittelpunktSetzen(50, 50);
   
     
   }
