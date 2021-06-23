@@ -18,7 +18,7 @@ public class SPIEL
     int [] ykoordinaten;
     public String amzug;
     int aktuellesfeld;
-    
+    ZEICHENFLAECHE oberflaeche;
 
     /**
      * Konstruktor für Objekte der Klasse SPIEL
@@ -88,6 +88,7 @@ public class SPIEL
         {
             ykoordinaten [i] = k - 100;
         }
+        
     }
     
     void main()
