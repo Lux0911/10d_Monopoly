@@ -6,15 +6,15 @@ public class JLabelBeispiel
     {
         // Erzeugung eines neuen Dialoges
         JDialog meinJDialog = new JDialog();
-        meinJDialog.setTitle("JLabel Beispiel");
+        meinJDialog.setTitle("aktueller Strassenstand");
         meinJDialog.setSize(975,1100);
  
     
  
         // Wir erstellen ein JLabel mit einem Text und unserem Icon
         // Die horizontale Ausrichtung setzen wir auf "CENTER"
-        JLabel label = new JLabel ("Start = +200$", 
-             JLabel.CENTER);
+        JLabel label = new JLabel ("Spieler Gelb  Kontostand = 1000$",
+                                JLabel.LEFT);
  
         // Die vertikale Ausrichtung des JLabels setzen wir auf "TOP"
         label.setVerticalAlignment(JLabel.TOP);
