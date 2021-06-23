@@ -18,6 +18,7 @@ public class SPIEL
     int [] ykoordinaten;
     public String amzug;
     int aktuellesfeld;
+    
 
     /**
      * Konstruktor für Objekte der Klasse SPIEL

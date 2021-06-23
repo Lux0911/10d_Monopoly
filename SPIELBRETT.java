@@ -85,6 +85,10 @@ public class SPIELBRETT
     STRASSE parkstrasse;
     SONDERFELD zusatzsteuer;
     STRASSE schlossallee;
+    
+    JLabel NameStart;
+    JLabel NameBadstrasse;
+    
     int x, y;
     
     public SPIELBRETT()
@@ -193,9 +197,16 @@ public class SPIELBRETT
         zusatzsteuer.PositionSetzen (0,200);
         schlossallee.PositionSetzen (0,100);
 
-
+        NameStart = new JLabel("START");
+        NameBadstrasse = new JLabel ("BADSTRASSE");
         
-                                                                                                                                                                                                                                                                                                                                                                                                                
+        NameStart.setLocation(0,0);
+        NameBadstrasse.setLocation(100,0);
+        
+        NameStart.setSize(100, 25);
+        NameBadstrasse.setSize (100,25);
+               
+        
     }
     
     
