@@ -1,5 +1,5 @@
 import javax.swing.*;
-public class JLabelBeispiel
+public class Spielstand
 {
     // main-Methode
     public static void main(String[] args)
