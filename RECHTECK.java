@@ -34,8 +34,8 @@ class RECHTECK
         y = 10;
         breite = 100;
         höhe = 100;
-        farbe = "rot";
-        sichtbar = true;
+        farbe = "gruen";
+        sichtbar = false;
         winkel = 0;
         symbol = ZEICHENFLAECHE.SymbolErzeugen(ZEICHENFLAECHE.SymbolArt.rechteck);
         ZEICHENFLAECHE.PositionSetzen(symbol, x, y);
