@@ -13,7 +13,7 @@ public class SPIEL
     SPIELFIGUR gelb;
     SPIELFIGUR blau;
     SPIELFIGUR rot;
-    SPIELFIGUR schwarz;
+    SPIELFIGUR gruen;
     int [] xkoordinaten;
     int [] ykoordinaten;
     public String amzug;
@@ -31,22 +31,18 @@ public class SPIEL
         gelb = new SPIELFIGUR();
         blau = new SPIELFIGUR();
         rot = new SPIELFIGUR();
-        schwarz = new SPIELFIGUR();
+        gruen = new SPIELFIGUR();
         
-        gelb.RadiusSetzen(10);
-        blau.RadiusSetzen(10);
-        rot.RadiusSetzen(10);
-        schwarz.RadiusSetzen(10);
-    
         gelb.FarbeSetzen("gelb");
-        blau.FarbeSetzen ("blau");
+        blau.FarbeSetzen("blau");
         rot.FarbeSetzen("rot");
-        schwarz.FarbeSetzen("schwarz");
+        gruen.FarbeSetzen("gruen");
         
-        gelb.MittelpunktSetzen (50, 50);
-        blau.MittelpunktSetzen (50, 50);
-        rot.MittelpunktSetzen (50, 50);
-        schwarz.MittelpunktSetzen (50, 50);
+        
+        gelb.PositionSetzen (50, 50);
+        blau.PositionSetzen (50, 50);
+        rot.PositionSetzen (50, 50);
+        gruen.PositionSetzen (50, 50);
         
         amzug = "gelb";
         aktuellesfeld = 0;
