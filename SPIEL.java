@@ -1,4 +1,4 @@
-
+import java.util.Random;
     
 /**
  * Beschreiben Sie hier die Klasse SPIEL.
@@ -19,6 +19,13 @@ public class SPIEL
     public String amzug;
     int aktuellesfeld;
     ZEICHENFLAECHE oberflaeche;
+    int zugxkoordinate;
+    int zugykoordinate;
+    int aktuellesxfeld;
+    int aktuellesyfeld;
+    int min;
+    int max;
+    Random random;
 
     /**
      * Konstruktor für Objekte der Klasse SPIEL
@@ -38,6 +45,10 @@ public class SPIEL
         rot.FarbeSetzen("rot");
         gruen.FarbeSetzen("gruen");
         
+        gelb.SichtbarkeitSetzen(true);
+        blau.SichtbarkeitSetzen(true);
+        rot.SichtbarkeitSetzen(true);
+        gruen.SichtbarkeitSetzen(true);
         
         gelb.PositionSetzen (50, 50);
         blau.PositionSetzen (50, 50);
@@ -46,6 +57,15 @@ public class SPIEL
         
         amzug = "gelb";
         aktuellesfeld = 0;
+        
+        zugxkoordinate = 0;
+        zugykoordinate = 0;
+        
+        aktuellesxfeld = 0;
+        aktuellesyfeld = 0;
+        
+        
+        random = new Random();
         
         xkoordinaten = new int [32];
         ykoordinaten = new int [32];
@@ -97,7 +117,11 @@ public class SPIEL
     }
     void Zug()
     {
-        int randomNumber = (int) (Math.random() * 2 +10);
-        
+        int value = (int)((Math.random())*11+1);
+        zugxkoordinate = xkoordinaten[value + aktuellesxfeld];
+        zugykoordinate = ykoordinaten[value + aktuellesyfeld];
+        gelb.PositionSetzen (zugxkoordinate,zugykoordinate);
+        aktuellesxfeld = value + aktuellesxfeld;
+        aktuellesyfeld = value + aktuellesyfeld;
     }
 }

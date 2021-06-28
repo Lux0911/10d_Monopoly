@@ -36,7 +36,8 @@ class SPIELFIGUR extends KREIS
     schwarz.RadiusSetzen(11);
     farbig.RadiusSetzen(10);
     schwarz.FarbeSetzen("schwarz");
-    
+    farbig.SichtbarkeitSetzen(true);
+    schwarz.SichtbarkeitSetzen(true);
     
     
     schwarz.MittelpunktSetzen(x, y);
