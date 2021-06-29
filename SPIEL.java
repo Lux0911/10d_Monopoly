@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
     
 /**
  * Beschreiben Sie hier die Klasse SPIEL.
@@ -117,11 +118,17 @@ public class SPIEL
     }
     void Zug()
     {
-        int value = (int)((Math.random())*11+1);
-        zugxkoordinate = xkoordinaten[value + aktuellesxfeld];
-        zugykoordinate = ykoordinaten[value + aktuellesyfeld];
+        int randomNum = ThreadLocalRandom.current().nextInt(2, 12 );
+        if (randomNum + aktuellesxfeld > 32 || randomNum + aktuellesyfeld > 32)
+        {
+            randomNum + aktuellesxfeld - 32;
+            randomNum + aktuellesyfeld - 32;
+        }
+        
+        zugxkoordinate = xkoordinaten[randomNum + aktuellesxfeld];
+        zugykoordinate = ykoordinaten[randomNum + aktuellesyfeld];
         gelb.PositionSetzen (zugxkoordinate,zugykoordinate);
-        aktuellesxfeld = value + aktuellesxfeld;
-        aktuellesyfeld = value + aktuellesyfeld;
+        aktuellesxfeld = randomNum + aktuellesxfeld;
+        aktuellesyfeld = randomNum + aktuellesyfeld;
     }
 }
