@@ -30,7 +30,7 @@ class KREIS
         x = 60;
         y = 60;
         radius = 10;
-        farbe = "rot";
+        farbe = "grau";
         sichtbar = false;
         winkel = 0;
         symbol = ZEICHENFLAECHE.SymbolErzeugen(ZEICHENFLAECHE.SymbolArt.kreis);
