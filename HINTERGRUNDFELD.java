@@ -1,11 +1,5 @@
 
-/**
- * Beschreiben Sie hier die Klasse SONDERFELD.
- * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
- */
-public class SONDERFELD extends FELD
+public class HINTERGRUNDFELD extends FELD
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
     Object sonderfeld;
@@ -16,14 +10,14 @@ public class SONDERFELD extends FELD
     int breite;
     boolean sichtbar;
     
-    public SONDERFELD()
+    public HINTERGRUNDFELD()
     {
         // Instanzvariable initialisieren
         x = 60;
         y = 60;
-        breite = 99;
-        hoehe = 99;
-        farbe = "braun";
+        breite = 100;
+        hoehe = 100;
+        farbe = "schwarz";
         sichtbar = true;
         
         
@@ -80,3 +74,4 @@ public class SONDERFELD extends FELD
        ZEICHENFLAECHE.GanzNachHintenBringen(sonderfeld);
    }
 }
+

@@ -1,4 +1,5 @@
-
+import java.util.Random;
+    
 /**
  * Beschreiben Sie hier die Klasse SPIEL.
  * 
@@ -12,39 +13,115 @@ public class SPIEL
     SPIELFIGUR gelb;
     SPIELFIGUR blau;
     SPIELFIGUR rot;
-    SPIELFIGUR schwarz;
+    SPIELFIGUR gruen;
+    int [] xkoordinaten;
+    int [] ykoordinaten;
+    public String amzug;
+    int aktuellesfeld;
+    ZEICHENFLAECHE oberflaeche;
+    int zugxkoordinate;
+    int zugykoordinate;
+    int aktuellesxfeld;
+    int aktuellesyfeld;
+    int min;
+    int max;
+    Random random;
 
     /**
      * Konstruktor für Objekte der Klasse SPIEL
      */
-    public SPIEL()
+    public SPIEL() 
     {
         // Instanzvariable initialisieren
-        spielbrett = new SPIELBRETT();
-        spielbrett.FarbeSetzen ("grau");
-
-        spielbrett.GroesseSetzen (1000, 1000);
         
+        spielbrett = new SPIELBRETT();
         gelb = new SPIELFIGUR();
         blau = new SPIELFIGUR();
         rot = new SPIELFIGUR();
-        schwarz = new SPIELFIGUR();
+        gruen = new SPIELFIGUR();
         
-        gelb.RadiusSetzen(20);
-        blau.RadiusSetzen(20);
-        rot.RadiusSetzen(20);
-        schwarz.RadiusSetzen(20);
-    
-        
-    
         gelb.FarbeSetzen("gelb");
-        blau.FarbeSetzen ("blau");
+        blau.FarbeSetzen("blau");
         rot.FarbeSetzen("rot");
-        schwarz.FarbeSetzen("schwarz");
+        gruen.FarbeSetzen("gruen");
+        
+        gelb.SichtbarkeitSetzen(true);
+        blau.SichtbarkeitSetzen(true);
+        rot.SichtbarkeitSetzen(true);
+        gruen.SichtbarkeitSetzen(true);
+        
+        gelb.PositionSetzen (50, 50);
+        blau.PositionSetzen (50, 50);
+        rot.PositionSetzen (50, 50);
+        gruen.PositionSetzen (50, 50);
+        
+        amzug = "gelb";
+        aktuellesfeld = 0;
+        
+        zugxkoordinate = 0;
+        zugykoordinate = 0;
+        
+        aktuellesxfeld = 0;
+        aktuellesyfeld = 0;
+        
+        
+        random = new Random();
+        
+        xkoordinaten = new int [32];
+        ykoordinaten = new int [32];
+        final int j = 50;
+        final int k = 850;
+        for (int i = 0; i < 9; i++)
+        {
+            xkoordinaten [i] = j + 100;
+        }
+        for (int i = 9; i < 17; i++)
+        {
+            xkoordinaten [i] = k;
+        }
+        for (int i = 17; i < 25; i++)
+        {
+            xkoordinaten [i] = k - 100;
+        }
+        for (int i = 25; i < 32; i++)
+        {
+            xkoordinaten [i] = j;
+        }
+        
+        for (int i = 0; i < 9; i++)
+        {
+            ykoordinaten [i] = j;
+        }
+        for (int i = 9; i < 17; i++)
+        {
+            ykoordinaten [i] = j + 100;
+        }
+        for (int i = 17; i < 25; i++)
+        {
+            ykoordinaten [i] = k;
+        }
+        for (int i = 25; i < 32; i++)
+        {
+            ykoordinaten [i] = k - 100;
+        }
+        
     }
-
+    
+    void main()
+    {
+        for (int i=0; i < 1000; i++)
+        {
+            Zug();
+            
+        }
+    }
     void Zug()
     {
-        
+        int value = (int)((Math.random())*11+1);
+        zugxkoordinate = xkoordinaten[value + aktuellesxfeld];
+        zugykoordinate = ykoordinaten[value + aktuellesyfeld];
+        gelb.PositionSetzen (zugxkoordinate,zugykoordinate);
+        aktuellesxfeld = value + aktuellesxfeld;
+        aktuellesyfeld = value + aktuellesyfeld;
     }
 }

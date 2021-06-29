@@ -29,9 +29,9 @@ class KREIS
     {
         x = 60;
         y = 60;
-        radius = 50;
+        radius = 10;
         farbe = "rot";
-        sichtbar = true;
+        sichtbar = false;
         winkel = 0;
         symbol = ZEICHENFLAECHE.SymbolErzeugen(ZEICHENFLAECHE.SymbolArt.kreis);
         ZEICHENFLAECHE.PositionSetzen(symbol, x - radius, y - radius);

@@ -5,7 +5,7 @@
  * @author Albert Wiedemann 
  * @version 1.0
  */
-class RECHTECK extends ZEICHENFLAECHE
+class RECHTECK 
 {
     /** x-Position der linken oberen Ecke. */
     private int x;
@@ -28,13 +28,12 @@ class RECHTECK extends ZEICHENFLAECHE
      */
     RECHTECK ()
     {
-        super();
         x = 10;
         y = 10;
         breite = 100;
         höhe = 100;
-        farbe = "rot";
-        sichtbar = true;
+        farbe = "gruen";
+        sichtbar = false;
         winkel = 0;
         symbol = ZEICHENFLAECHE.SymbolErzeugen(ZEICHENFLAECHE.SymbolArt.rechteck);
         ZEICHENFLAECHE.PositionSetzen(symbol, x, y);
