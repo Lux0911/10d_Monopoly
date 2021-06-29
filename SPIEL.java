@@ -4,6 +4,7 @@ import java.util.concurrent.ThreadLocalRandom;
 /**
  * Beschreiben Sie hier die Klasse SPIEL.
  * 
+ * 
  * @author (Ihr Name) 
  * @version (eine Versionsnummer oder ein Datum)
  */
@@ -72,6 +73,8 @@ public class SPIEL
         ykoordinaten = new int [32];
         final int j = 50;
         final int k = 850;
+        min = 2;
+        max = 12;
         for (int i = 0; i < 9; i++)
         {
             xkoordinaten [i] = j + 100;
@@ -118,13 +121,7 @@ public class SPIEL
     }
     void Zug()
     {
-        int randomNum = ThreadLocalRandom.current().nextInt(2, 12 );
-        if (randomNum + aktuellesxfeld > 32 || randomNum + aktuellesyfeld > 32)
-        {
-            randomNum + aktuellesxfeld - 32;
-            randomNum + aktuellesyfeld - 32;
-        }
-        
+        int randomNum = (int)Math.floor(Math.random()*(max-min+1)+min);
         zugxkoordinate = xkoordinaten[randomNum + aktuellesxfeld];
         zugykoordinate = ykoordinaten[randomNum + aktuellesyfeld];
         gelb.PositionSetzen (zugxkoordinate,zugykoordinate);
