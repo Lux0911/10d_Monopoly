@@ -136,7 +136,7 @@ public class SPIEL
         // Add 1 to the result to get a number from the required range
         // (i.e., [2 - 12]).
         n += 2;
-        System.out.println(n);
+        System.out.println("Du hast eine " + n + " gewürfelt");
         zugxkoordinate = xkoordinaten[n + aktuellesxfeld];
         zugykoordinate = ykoordinaten[n + aktuellesyfeld];
         gelb.PositionSetzen (zugxkoordinate,zugykoordinate);
