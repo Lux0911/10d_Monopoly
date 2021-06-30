@@ -24,7 +24,7 @@ class ZEICHENFLAECHE
     private static ZEICHENFLAECHE zeichenfläche = null;
     
     /** Fenster für die Zeichenfläche. */
-    private JFrame fenster;
+    JFrame fenster;
     /** Die eigentliche Darstellungskomponente. */
     private JComponent malfläche;
     /** Feld aller zu zeichnenden Objekte. */
@@ -38,7 +38,7 @@ class ZEICHENFLAECHE
         alleSymbole = new ArrayList<GrafikSymbol>();
         fenster = new JFrame("Zeichenfläche");
         fenster.setLocation(50, 50);
-        fenster.setSize(900, 900);
+        fenster.setSize(917, 940);
         
         malfläche = new JComponent()
         {
@@ -62,6 +62,7 @@ class ZEICHENFLAECHE
         
         fenster.add(malfläche, BorderLayout.CENTER);
         fenster.setVisible(true);
+        
     }
     
     /**

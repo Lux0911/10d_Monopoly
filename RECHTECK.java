@@ -1,4 +1,4 @@
-
+    
 /**
  * Wrapperklasse für ein Rechteck auf der Zeichenfläche.
  * 
@@ -23,8 +23,6 @@ class RECHTECK
     private int winkel;
     /** Referenz auf das Delegate-Objekt. */
     private Object symbol;
-    RECHTECK rechteck;
-
     /**
      * Der Konstruktor erzeugt das Delegate-Objekt
      */

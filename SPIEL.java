@@ -1,7 +1,9 @@
-
+import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
     
 /**
  * Beschreiben Sie hier die Klasse SPIEL.
+ * 
  * 
  * @author (Ihr Name) 
  * @version (eine Versionsnummer oder ein Datum)
@@ -13,11 +15,19 @@ public class SPIEL
     SPIELFIGUR gelb;
     SPIELFIGUR blau;
     SPIELFIGUR rot;
-    SPIELFIGUR schwarz;
+    SPIELFIGUR gruen;
     int [] xkoordinaten;
     int [] ykoordinaten;
     public String amzug;
     int aktuellesfeld;
+    ZEICHENFLAECHE oberflaeche;
+    int zugxkoordinate;
+    int zugykoordinate;
+    int aktuellesxfeld;
+    int aktuellesyfeld;
+    int min;
+    int max;
+    Random random;
 
     /**
      * Konstruktor für Objekte der Klasse SPIEL
@@ -30,30 +40,41 @@ public class SPIEL
         gelb = new SPIELFIGUR();
         blau = new SPIELFIGUR();
         rot = new SPIELFIGUR();
-        schwarz = new SPIELFIGUR();
+        gruen = new SPIELFIGUR();
         
-        gelb.RadiusSetzen(10);
-        blau.RadiusSetzen(10);
-        rot.RadiusSetzen(10);
-        schwarz.RadiusSetzen(10);
-    
         gelb.FarbeSetzen("gelb");
-        blau.FarbeSetzen ("blau");
+        blau.FarbeSetzen("blau");
         rot.FarbeSetzen("rot");
-        schwarz.FarbeSetzen("schwarz");
+        gruen.FarbeSetzen("gruen");
         
-        gelb.MittelpunktSetzen (50, 50);
-        blau.MittelpunktSetzen (50, 50);
-        rot.MittelpunktSetzen (50, 50);
-        schwarz.MittelpunktSetzen (50, 50);
+        gelb.SichtbarkeitSetzen(true);
+        blau.SichtbarkeitSetzen(true);
+        rot.SichtbarkeitSetzen(true);
+        gruen.SichtbarkeitSetzen(true);
+        
+        gelb.PositionSetzen (50, 50);
+        blau.PositionSetzen (50, 50);
+        rot.PositionSetzen (50, 50);
+        gruen.PositionSetzen (50, 50);
         
         amzug = "gelb";
         aktuellesfeld = 0;
+        
+        zugxkoordinate = 0;
+        zugykoordinate = 0;
+        
+        aktuellesxfeld = 0;
+        aktuellesyfeld = 0;
+        
+        
+        random = new Random();
         
         xkoordinaten = new int [32];
         ykoordinaten = new int [32];
         final int j = 50;
         final int k = 850;
+        min = 2;
+        max = 12;
         for (int i = 0; i < 9; i++)
         {
             xkoordinaten [i] = j + 100;
@@ -87,6 +108,7 @@ public class SPIEL
         {
             ykoordinaten [i] = k - 100;
         }
+        
     }
     
     void main()
@@ -99,7 +121,11 @@ public class SPIEL
     }
     void Zug()
     {
-        int randomNumber = (int) (Math.random() * 2 +10);
-        
+        int randomNum = (int)Math.floor(Math.random()*(max-min+1)+min);
+        zugxkoordinate = xkoordinaten[randomNum + aktuellesxfeld];
+        zugykoordinate = ykoordinaten[randomNum + aktuellesyfeld];
+        gelb.PositionSetzen (zugxkoordinate,zugykoordinate);
+        aktuellesxfeld = randomNum + aktuellesxfeld;
+        aktuellesyfeld = randomNum + aktuellesyfeld;
     }
 }
