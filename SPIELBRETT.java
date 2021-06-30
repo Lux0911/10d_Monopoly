@@ -128,7 +128,7 @@ public class SPIELBRETT
         badstrasse.FarbeSetzen("braun");
         turmstrasse.FarbeSetzen("braun");
         einkommenssteuer.FarbeSetzen("weiß");
-        suedbahnhof.FarbeSetzen ("weiß");
+        suedbahnhof.FarbeSetzen ("schwarz");
         chausseestrasse.FarbeSetzen("cyan");
         elisenstrasse.FarbeSetzen("cyan");
         poststrasse.FarbeSetzen("cyan");
@@ -136,7 +136,7 @@ public class SPIELBRETT
         seestrasse.FarbeSetzen("magenta");
         hafenstrasse.FarbeSetzen("magenta");
         neuestrasse.FarbeSetzen("magenta");
-        westbahnhof.FarbeSetzen("weiß");
+        westbahnhof.FarbeSetzen("schwarz");
         muenchnerstrasse.FarbeSetzen("orange");
         wienerstrasse.FarbeSetzen("orange");
         berlinerstrasse.FarbeSetzen("orange");
@@ -144,7 +144,7 @@ public class SPIELBRETT
         theaterstrasse.FarbeSetzen("rot");
         museumstrasse.FarbeSetzen("rot");
         opernplatz.FarbeSetzen("rot");
-        nordbahnhof.FarbeSetzen("weiß");
+        nordbahnhof.FarbeSetzen("schwarz");
         lessingstrasse.FarbeSetzen("gelb");
         schillerstrasse.FarbeSetzen("gelb");
         goethestrasse.FarbeSetzen("gelb");
@@ -152,7 +152,7 @@ public class SPIELBRETT
         rathausplatz.FarbeSetzen("grün");
         hauptstrasse.FarbeSetzen("grün");
         bahnhofstrasse.FarbeSetzen("grün");
-        hauptbahnhof.FarbeSetzen("weiß");
+        hauptbahnhof.FarbeSetzen("schwarz");
         parkstrasse.FarbeSetzen("blau");
         zusatzsteuer.FarbeSetzen("weiß");
         schlossallee.FarbeSetzen("blau");
