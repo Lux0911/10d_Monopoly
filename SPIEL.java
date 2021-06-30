@@ -121,11 +121,12 @@ public class SPIEL
     }
     void Zug()
     {
-        int randomNum = (int)Math.floor(Math.random()*(max-min+1)+min);
+        int randomNum = ThreadLocalRandom.current().nextInt(1, 11 + 1);
         zugxkoordinate = xkoordinaten[randomNum + aktuellesxfeld];
         zugykoordinate = ykoordinaten[randomNum + aktuellesyfeld];
         gelb.PositionSetzen (zugxkoordinate,zugykoordinate);
         aktuellesxfeld = randomNum + aktuellesxfeld;
         aktuellesyfeld = randomNum + aktuellesyfeld;
+        randomNum = 0;
     }
 }
