@@ -13,7 +13,7 @@ public class Spielstand
  
         // Wir erstellen ein JLabel mit einem Text und unserem Icon
         // Die horizontale Ausrichtung setzen wir auf "CENTER"
-        JLabel label = new JLabel ("Spieler Gelb  Kontostand = 1000$",
+        JLabel label = new JLabel ("Spieler Gelb  Kontostand = 1000$       "+ "Strassen in Besitz: ",
                                 JLabel.LEFT);
  
         // Die vertikale Ausrichtung des JLabels setzen wir auf "TOP"

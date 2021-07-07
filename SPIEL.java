@@ -141,11 +141,14 @@ public class SPIEL
         // (i.e., [2 - 12]).
         n += 2;
         System.out.println("Du hast eine " + n + " gewürfelt");
-        zugxkoordinate = xkoordinaten[n + aktuellesxfeld];
-        zugykoordinate = ykoordinaten[n + aktuellesyfeld];
+        
+        //zugxkoordinate = xkoordinaten[n + aktuellesxfeld];
+        //zugykoordinate = ykoordinaten[n + aktuellesyfeld];
 
-        gelb.PositionSetzen (zugxkoordinate,zugykoordinate);
-        aktuellesxfeld = n + aktuellesxfeld;
-        aktuellesyfeld = n + aktuellesyfeld;
+        //gelb.PositionSetzen (zugxkoordinate,zugykoordinate);
+        //aktuellesxfeld = n + aktuellesxfeld;
+        //aktuellesyfeld = n + aktuellesyfeld;
+        
+        
     }
 }
