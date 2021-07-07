@@ -122,13 +122,7 @@ public class SPIEL
     void Zug()
     {
 
-        int randomNum = Random().nextInt(11);
-        int xfeld = 0;
-        int yfeld = 0;
-        xfeld = randomNum + aktuellesxfeld;
-        yfeld = randomNum + aktuellesyfeld;
-        zugxkoordinate = xkoordinaten[xfeld];
-        zugykoordinate = ykoordinaten[yfeld];
+        
 
         //int randomNum = ThreadLocalRandom.current().nextInt(1, 11 + 1);
         //zugxkoordinate = xkoordinaten[randomNum + aktuellesxfeld];
