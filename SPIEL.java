@@ -43,7 +43,7 @@ public class SPIEL
         rot = new SPIELFIGUR();
         gruen = new SPIELFIGUR();
         
-        gelb.FarbeSetzen("gelb");
+        gelb.FarbeSetzen("hellgelb");
         blau.FarbeSetzen("blau");
         rot.FarbeSetzen("rot");
         gruen.FarbeSetzen("gruen");
@@ -58,7 +58,7 @@ public class SPIEL
         rot.PositionSetzen (50, 70);
         gruen.PositionSetzen (50, 80);
         
-        amzug = "gelb";
+        amzug = "hellgelb";
         aktuellesfeld = 0;
         
         zugxkoordinate = 0;

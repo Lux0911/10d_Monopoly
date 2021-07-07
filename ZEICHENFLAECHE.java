@@ -159,6 +159,7 @@ class ZEICHENFLAECHE
                 break;
             default:
                 c = Color.BLACK;
+                // dunkelgrün noch erstellen als hintergrund feld
         }
         ((GrafikSymbol) obj).FarbeSetzen(c);
         zeichenfläche.malfläche.repaint();
