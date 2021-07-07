@@ -29,7 +29,7 @@ class KREIS
     {
         x = 60;
         y = 60;
-        radius = 10;
+        radius = 0;
         farbe = "grau";
         sichtbar = false;
         winkel = 0;

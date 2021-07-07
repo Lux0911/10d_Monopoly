@@ -54,9 +54,9 @@ public class SPIEL
         gruen.SichtbarkeitSetzen(true);
         
         gelb.PositionSetzen (50, 50);
-        blau.PositionSetzen (50, 50);
-        rot.PositionSetzen (50, 50);
-        gruen.PositionSetzen (50, 50);
+        blau.PositionSetzen (50, 60);
+        rot.PositionSetzen (50, 70);
+        gruen.PositionSetzen (50, 80);
         
         amzug = "gelb";
         aktuellesfeld = 0;
@@ -70,8 +70,8 @@ public class SPIEL
         
         random = new Random();
         
-        xkoordinaten = new int [32];
-        ykoordinaten = new int [32];
+        xkoordinaten = new int [33];
+        ykoordinaten = new int [33];
         final int j = 50;
         final int k = 850;
         min = 2;
@@ -141,6 +141,7 @@ public class SPIEL
         xkoordinaten[29] = 50;
         xkoordinaten[30] = 50;
         xkoordinaten[31] = 50; 
+        
         ykoordinaten[0] = 50;
         ykoordinaten[1] = 50;
         ykoordinaten[2] = 50;
@@ -176,14 +177,7 @@ public class SPIEL
 
     }
     
-    void main()
-    {
-        for (int i=0; i < 1000; i++)
-        {
-            Zug();
-            
-        }
-    }
+    
     void Zug()
     {
 
@@ -207,12 +201,12 @@ public class SPIEL
         n += 2;
         System.out.println("Du hast eine " + n + " gewürfelt");
         
-        //zugxkoordinate = xkoordinaten[n + aktuellesxfeld];
-        //zugykoordinate = ykoordinaten[n + aktuellesyfeld];
+        zugxkoordinate = xkoordinaten[n + aktuellesxfeld];
+        zugykoordinate = ykoordinaten[n + aktuellesyfeld];
 
-        //gelb.PositionSetzen (zugxkoordinate,zugykoordinate);
-        //aktuellesxfeld = n + aktuellesxfeld;
-        //aktuellesyfeld = n + aktuellesyfeld;
+        gelb.PositionSetzen (zugxkoordinate,zugykoordinate);
+        aktuellesxfeld = n + aktuellesxfeld;
+        aktuellesyfeld = n + aktuellesyfeld;
         
         
     }
