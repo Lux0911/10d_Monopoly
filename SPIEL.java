@@ -92,7 +92,6 @@ public class SPIEL
         {
             xkoordinaten [i] = j;
         }
-        
         for (int i = 0; i < 9; i++)
         {
             ykoordinaten [i] = j;
@@ -122,6 +121,7 @@ public class SPIEL
     }
     void Zug()
     {
+<<<<<<< HEAD
         int randomNum = Random().nextInt(11);
         int xfeld = 0;
         int yfeld = 0;
@@ -129,9 +129,29 @@ public class SPIEL
         yfeld = randomNum + aktuellesyfeld;
         zugxkoordinate = xkoordinaten[xfeld];
         zugykoordinate = ykoordinaten[yfeld];
+=======
+        //int randomNum = ThreadLocalRandom.current().nextInt(1, 11 + 1);
+        //zugxkoordinate = xkoordinaten[randomNum + aktuellesxfeld];
+        //zugykoordinate = ykoordinaten[randomNum + aktuellesyfeld];
+        //gelb.PositionSetzen (zugxkoordinate,zugykoordinate);
+        //aktuellesxfeld = randomNum + aktuellesxfeld;
+        //aktuellesyfeld = randomNum + aktuellesyfeld;
+        //randomNum = 0;
+        
+        Random rand = new Random();
+
+        // Obtain a number between [0 - 10].
+        int n = rand.nextInt(10);
+
+        // Add 1 to the result to get a number from the required range
+        // (i.e., [2 - 12]).
+        n += 2;
+        System.out.println("Du hast eine " + n + " gewürfelt");
+        zugxkoordinate = xkoordinaten[n + aktuellesxfeld];
+        zugykoordinate = ykoordinaten[n + aktuellesyfeld];
+>>>>>>> ee992570e675bb28d3a7d741e52ea3594a13e9d6
         gelb.PositionSetzen (zugxkoordinate,zugykoordinate);
-        aktuellesxfeld = randomNum + aktuellesxfeld;
-        aktuellesyfeld = randomNum + aktuellesyfeld;
-        randomNum = 0;
+        aktuellesxfeld = n + aktuellesxfeld;
+        aktuellesyfeld = n + aktuellesyfeld;
     }
 }
