@@ -200,13 +200,19 @@ public class SPIEL
         // (i.e., [2 - 12]).
         n += 2;
         System.out.println("Du hast eine " + n + " gewürfelt");
+        aktuellesxfeld += n;
+        aktuellesyfeld += n;
+        if (aktuellesxfeld >= 31)
+        {
+            aktuellesxfeld -= 32;
+            aktuellesyfeld -= 32;
+        }
+        zugxkoordinate = xkoordinaten[aktuellesxfeld];
+        zugykoordinate = ykoordinaten[aktuellesyfeld];
         
-        zugxkoordinate = xkoordinaten[n + aktuellesxfeld];
-        zugykoordinate = ykoordinaten[n + aktuellesyfeld];
-
+        
         gelb.PositionSetzen (zugxkoordinate,zugykoordinate);
-        aktuellesxfeld = n + aktuellesxfeld;
-        aktuellesyfeld = n + aktuellesyfeld;
+        
         
         
     }
