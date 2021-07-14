@@ -177,8 +177,29 @@ public class SPIEL
 
     }
     
-    
-    void Zug()
+    void main()
+    {
+        switch (amzug)
+        {
+            case "gelb":
+                gelbZug();
+                amzug = "blau";
+                break;
+            case "blau":
+                blauZug();
+                amzug = "rot";
+                break;
+            case "rot":
+                rotZug();
+                amzug = "gruen";
+                break;
+            case "gruen":
+                gruenZug();
+                amzug = "gelb";
+                break;
+        }
+    }
+    void gelbZug()
     {
 
         
@@ -215,5 +236,56 @@ public class SPIEL
         
         
         
+    }
+    void rotZug()
+    {
+        Random rand = new Random();
+        int n = rand.nextInt(10);
+        n += 2;
+        System.out.println("Du hast eine " + n + " gewürfelt");
+        aktuellesxfeld += n;
+        aktuellesyfeld += n;
+        if (aktuellesxfeld >= 31)
+        {
+            aktuellesxfeld -= 32;
+            aktuellesyfeld -= 32;
+        }
+        zugxkoordinate = xkoordinaten[aktuellesxfeld];
+        zugykoordinate = ykoordinaten[aktuellesyfeld];
+        rot.PositionSetzen (zugxkoordinate,zugykoordinate);
+    }
+    void gruenZug()
+    {
+        Random rand = new Random();
+        int n = rand.nextInt(10);
+        n += 2;
+        System.out.println("Du hast eine " + n + " gewürfelt");
+        aktuellesxfeld += n;
+        aktuellesyfeld += n;
+        if (aktuellesxfeld >= 31)
+        {
+            aktuellesxfeld -= 32;
+            aktuellesyfeld -= 32;
+        }
+        zugxkoordinate = xkoordinaten[aktuellesxfeld];
+        zugykoordinate = ykoordinaten[aktuellesyfeld];
+        gruen.PositionSetzen (zugxkoordinate,zugykoordinate);    
+    }
+    void blauZug()
+    {
+        Random rand = new Random();
+        int n = rand.nextInt(10);
+        n += 2;
+        System.out.println("Du hast eine " + n + " gewürfelt");
+        aktuellesxfeld += n;
+        aktuellesyfeld += n;
+        if (aktuellesxfeld >= 31)
+        {
+            aktuellesxfeld -= 32;
+            aktuellesyfeld -= 32;
+        }
+        zugxkoordinate = xkoordinaten[aktuellesxfeld];
+        zugykoordinate = ykoordinaten[aktuellesyfeld];
+        blau.PositionSetzen (zugxkoordinate,zugykoordinate);
     }
 }
